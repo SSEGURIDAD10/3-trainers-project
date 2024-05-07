@@ -2,6 +2,8 @@
 import './App.css'
 import Card from './../../trainers-pokemon-frontend/src/components/Card'
 import ListCard from './../../trainers-pokemon-frontend/src/components/ListCard'
+import Menu from './../../trainers-pokemon-frontend/src/components/Menu'
+import SearchBar from './../../trainers-pokemon-frontend/src/components/SearchBar'
 import Home from './pages/Home'
 import DetailTrainer from './pages/DetailTrainer'
 import FormTrainers from './pages/FormTrainers'
@@ -13,7 +15,8 @@ function App() {
 
   return (
     <>
-    <h1>Hola</h1>
+    <Menu />
+    <SearchBar />
     <ListCard />
     <Card />
     <Home />
