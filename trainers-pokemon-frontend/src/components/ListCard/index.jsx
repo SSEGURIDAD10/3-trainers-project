@@ -1,10 +1,14 @@
 // rafce
-import React from 'react'
+import React from "react";
 
-const ListCard = () => {
+const ListCard = (props) => {
+  const { children } = props;
   return (
-    <div>ListCard</div>
-  )
-}
+    <>
+      <h1>ListCard</h1>
+      {children}
+    </>
+  );
+};
 
-export default ListCard
+export default ListCard;

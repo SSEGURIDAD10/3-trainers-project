@@ -1,11 +1,9 @@
 // rafce
+import React from "react";
 
-import React from 'react'
+const Card = (props) => {
+  const { name } = props;
+  return <h1>Soy {name}!</h1>;
+};
 
-const Card = () => {
-  return (
-    <div>Card</div>
-  )
-}
-
-export default Card
+export default Card;

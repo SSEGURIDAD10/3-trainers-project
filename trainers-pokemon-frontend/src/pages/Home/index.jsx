@@ -1,8 +1,16 @@
 import React from 'react'
+import SearchBar from './../../components/SearchBar'
+import ListCard from './../../components/ListCard'
+import Card from './../../components/Card'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <SearchBar />
+    <ListCard>
+      <Card name="Ash" />
+    </ListCard>
+    </>
   )
 }
 
