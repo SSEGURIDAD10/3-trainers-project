@@ -1,7 +1,7 @@
 // rafce
 import './index.css';
 import logo from '../../assets/img/logo.png';
-// import { a } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (
@@ -10,15 +10,15 @@ const Menu = () => {
         <img src={logo} alt="logo de trainers" className="logo-img" />
       </div>
       <ul className="nav-items">
-        <a href="/" className="nav-a">
+        <Link to="/" className="nav-a">
           Inicio
-        </a>
-        <a href="/new-trainer" className="nav-a">
+        </Link>
+        <Link to="/new-trainer" className="nav-a">
           Registro entrenador
-        </a>
-        <a href="/about" className="nav-a">
+        </Link>
+        <Link to="/about" className="nav-a">
           Acerca de nosotros
-        </a>
+        </Link>
       </ul>
     </nav>
   );
