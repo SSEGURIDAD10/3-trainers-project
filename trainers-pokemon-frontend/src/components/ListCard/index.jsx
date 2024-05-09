@@ -1,12 +1,14 @@
 // rafce
 import React from "react";
+import './index.css'
 
 const ListCard = (props) => {
   const { children } = props;
   return (
     <>
-      <h1>ListCard</h1>
+    <div className="container-list">
       {children}
+    </div>
     </>
   );
 };

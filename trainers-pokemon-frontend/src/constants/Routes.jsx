@@ -1,35 +1,62 @@
-import {useRoutes} from 'react-router-dom'
+import { useRoutes } from "react-router-dom";
 
-import Home from './../pages/Home'
-import DetailTrainer from './../pages/DetailTrainer'
-import FormTrainers from './../pages/FormTrainers'
-import About from './../pages/About'
-import NotFound from './../pages/NotFound'
+import Home from "./../pages/Home";
+import DetailTrainer from "./../pages/DetailTrainer";
+import FormTrainers from "./../pages/FormTrainers";
+import About from "./../pages/About";
+import NotFound from "./../pages/NotFound";
 
-function Routes() {
-  const routes = useRoutes([
+// function Routes() {
+//   const routes = useRoutes([
+//     {
+//         path: '/',
+//         element: <Home/>
+//     },
+//     {
+//         path: 'new-trainer',
+//         element: <FormTrainers/>
+//     },
+//     {
+//         path: 'detail-trainer',
+//         element: <DetailTrainer/>
+//     },
+//     {
+//         path: 'about',
+//         element: <About/>
+//     },
+//     {
+//         path: '*',
+//         element: <NotFound/>
+//     }
+//   ]);
+//   return routes;
+// }
+
+// export default Routes
+
+const Routes = () => {
+  return useRoutes([
     {
-        path: '/',
-        element: <Home/>
+      path: "/",
+      element: <Home />,
     },
     {
-        path: 'new-trainer',
-        element: <FormTrainers/>
+      path: "new-trainer",
+      element: <FormTrainers />,
     },
     {
-        path: 'detail-trainer',
-        element: <DetailTrainer/>
+      path: "detail-trainer",
+      element: <DetailTrainer />,
     },
     {
-        path: 'about',
-        element: <About/>
+      path: "about",
+      element: <About />,
     },
     {
-        path: '*',
-        element: <NotFound/>
-    }
+      path: "*",
+      element: <NotFound />,
+    },
   ]);
-  return routes;
-}
+};
 
-export default Routes
+export default Routes;
