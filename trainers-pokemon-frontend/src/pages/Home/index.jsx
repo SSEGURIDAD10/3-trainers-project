@@ -12,7 +12,7 @@ const Home = () => {
     {id: 3, name: 'Brock', team: [], rank: '', region: ''}
   ];
 
-  // getTrainers();
+  getTrainers();
 
   return (
     <>

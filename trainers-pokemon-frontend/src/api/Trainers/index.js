@@ -1,4 +1,4 @@
-const URL = 'https://localhost:3000/trainers';
+const URL = 'http://localhost:3000/trainers';
 
 const getTrainers = async() => {
     const request = await fetch(URL);
