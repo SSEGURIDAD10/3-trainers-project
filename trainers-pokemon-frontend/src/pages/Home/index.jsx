@@ -9,6 +9,8 @@ const Home = () => {
     <SearchBar />
     <ListCard>
       <Card name="Ash" />
+      <Card name="Misty" />
+      <Card name="Brock" />
     </ListCard>
     </>
   )
