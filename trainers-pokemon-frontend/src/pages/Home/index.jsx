@@ -6,9 +6,9 @@ import Card from './../../components/Card'
 const Home = () => {
 
   const trainers = [
-    {name: 'Ash', team: [], rank: '', region: ''},
-    {name: 'Misty', team: [], rank: '', region: ''},
-    {name: 'Brock', team: [], rank: '', region: ''}
+    {id: 1, name: 'Ash', team: [], rank: '', region: ''},
+    {id: 2, name: 'Misty', team: [], rank: '', region: ''},
+    {id: 3, name: 'Brock', team: [], rank: '', region: ''}
   ]
   return (
     <>
@@ -17,7 +17,8 @@ const Home = () => {
       {
       trainers.map((element, index) => {
         return(
-          <Card 
+          <Card
+            key={element.id}
             name={element.name}
           />
         )
