@@ -4,13 +4,25 @@ import ListCard from './../../components/ListCard'
 import Card from './../../components/Card'
 
 const Home = () => {
+
+  const trainers = [
+    {name: 'Ash', team: [], rank: '', region: ''},
+    {name: 'Misty', team: [], rank: '', region: ''},
+    {name: 'Brock', team: [], rank: '', region: ''}
+  ]
   return (
     <>
     <SearchBar />
     <ListCard>
-      <Card name="Ash" />
-      <Card name="Misty" />
-      <Card name="Brock" />
+      {
+      trainers.map((element, index) => {
+        return(
+          <Card 
+            name={element.name}
+          />
+        )
+      })
+      }
     </ListCard>
     </>
   )

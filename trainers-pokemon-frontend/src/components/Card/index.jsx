@@ -1,18 +1,9 @@
 // rafce
-// import React from "react";
-
-// const Card = (props) => {
-//   const { name } = props;
-//   return <h1>Soy {name}!</h1>;
-// };
-
-// export default Card;
-
 import "./index.css";
 import defaultPhoto from "../../assets/img/default-photo.jpeg";
 
-function Card() {
-  // const { image, region, rank, name, team } = props;
+function Card(props) {
+  const { image, region, rank, name, team } = props;
 
   const imgStyles = {
     width: "100%",
@@ -37,7 +28,7 @@ function Card() {
             </div>
           </div>
 
-          <h2 className="title">ash</h2>
+          <h2 className="title">{name}</h2>
           <div className="team">
             <h3 className="team-label">Equipo</h3>
             <div className="team-members">
