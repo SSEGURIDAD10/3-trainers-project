@@ -51,7 +51,7 @@ const Home = () => {
 
     <ListCard>
       {
-      trainers.map((element, index) => {
+      trainers.length > 0 ? trainers.map((element, index) => {
         return(
           <Card
             key={element.id}
@@ -63,6 +63,7 @@ const Home = () => {
           />
         )
       })
+      :<h1>API Epic Fail</h1>
       }
     </ListCard>
     </>

@@ -17,7 +17,7 @@ function Card(props) {
     <>
       <div className="container-card">
         <div className="image-trainer">
-          <img src={image} alt="imagen del entrenador" style={imgStyles} />
+          <img src={image || defaultPhoto} alt="imagen del entrenador" style={imgStyles} />
         </div>
 
         <div className="card-content">
