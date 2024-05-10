@@ -17,31 +17,39 @@ function Card(props) {
     <>
       <div className="container-card">
         <div className="image-trainer">
-          <img src="" alt="imagen del entrenador" style={imgStyles} />
+          <img src={image} alt="imagen del entrenador" style={imgStyles} />
         </div>
+
         <div className="card-content">
           <div className="stats">
-            <p className="region-tag">region1</p>
+            <p className="region-tag">{region.name}</p>
             <div className="rank">
-              <p className="rank-label">rango:</p>
-              <p className="rank-tag">99</p>
+              <p className="rank-label">Rango:</p>
+              <p className="rank-tag">{rank}</p>
             </div>
           </div>
-
           <h2 className="title">{name}</h2>
+
           <div className="team">
             <h3 className="team-label">Equipo</h3>
             <div className="team-members">
-              <div className="pokemon-tag">
-                <p className="pokemon-tag--name">pke1</p>
-                <p className="pokemon-tag--level">nivel: 99</p>
-              </div>
+
+              {
+                team.map((element, index) => {
+                  return(
+                    <div className="pokemon-tag" key={index}>
+                      <p className="pokemon-tag--name">{element.pokemon}</p>
+                      <p className="pokemon-tag--level">{element.level}</p>
+                    </div>
+                  )
+                })
+              }
+
             </div>
           </div>
 
-          <a href="#" className="button-default">
-            más información
-          </a>
+          <a href="#" className="button-default">Más información</a>
+
         </div>
       </div>
     </>

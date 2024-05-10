@@ -31,14 +31,14 @@ const Home = () => {
 
   //   // 2.- Solo se ejecuta una vez
     useEffect(() => {
-      console.log('useEffect con []');
+      // console.log('useEffect con []');
       getData();
     }, []);
 
   //   // 3.- Se ejecuta cuando la condicion 1 cambia de valor (o las N condiciones)
   // useEffect(() => {
   //   console.log('useEffect con [condition1, condition2]');
-  // }, [condition1, condition2]);
+  // }, [numero]);
 
   return (
     <>
@@ -56,6 +56,10 @@ const Home = () => {
           <Card
             key={element.id}
             name={element.name}
+            image={element.imgs.card}
+            region={element.region}
+            rank={element.rank}
+            team={element.team}
           />
         )
       })
